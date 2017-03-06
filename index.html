@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Capitan v0.0.1</title>
+    <script type='text/javascript' src='assets/js/main.js'></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+</head>
+<body>
+	<div id="contenedor">
+		
+		<div id="usuario" align="right">Hola coder</div>
+		
+		<div id="logo" align="center">
+			<img src="http://laboratoria.la/app/assets/img/logo_laboratoria-09.svg" width="300" height="150">
+		</div>
+
+		<div id="info">
+			<h2>¿Qué es laboratoria?</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, vero pariatur quo! Nam, alias distinctio asperiores voluptate eos repellendus beatae possimus officiis tempore officia quisquam eligendi? Ipsam accusantium, earum magni error voluptas debitis nam, unde neque. Suscipit eligendi animi nisi nulla placeat delectus quasi aliquam perferendis, saepe laboriosam quaerat deleniti.</p>
+		</div>
+
+		<div id="contenedor-botones">
+
+		<h4>Temas</h4>
+			<div id="botones">
+				
+				<input id="botonSprint1" type="button" value="Sprint 1" onclick="botones(this.id)">
+				<input id="botonSprint2" type="button" value="Sprint 2" onclick="botones(this.id)">
+				<input id="botonSprint3" type="button" value="Sprint 3" onclick="botones(this.id)">
+
+			</div>
+		</div>
+		<br>
+		<br>
+		<div id="sprints">
+
+			<strong><div id="tituloSprint">Sprint 2: Introducción al desarrollo web y construcción de páginas web</div></strong>
+			<div id="textoSprint">
+				<ol id="lista">
+					<li id="li1">Ciclo de vida del desarrollo web y arquitectura básica cliente/servidor/ Configuración del ambiente de trabajo e introducción a git.</li>
+					<li id="li2">HTML y Javascript en el navegador.</li>
+					<li id="li3">Manejo de comandos básicos de git en la terminal.</li>
+					<li id="li4">Pruebas unitarias</li>
+					<li id="li5">Git / Resolución de conflictos / Branching model</li>
+					<li id="li6">DOM</li>
+				</ol>
+			</div>
+			
+		</div>
+		
+		<br>
+		<hr>
+
+		<div id="quiz">
+
+		<h4>Quiz</h4>
+
+		<form name="formulario">
+
+		<h4 id="quiz1">¿Cuál es el comando para iniciar un repositorio desde la consola?</h4>
+
+				<input id="pregunta1" type="radio" name="preg1" onclick="puntosQuiz()"><span>git init . </span><br>
+				<input id="pregunta2" type="radio" name="preg1" onclick="puntosQuiz()"><span>git init <br>
+				<input id="pregunta3" type="radio" name="preg1" onclick="puntosQuiz()"><span>git init add <br>
+
+		<h4 id="quiz2">¿Cuál es la finalidad de hacer una prueba unitaria?</h4>
+				
+				<input id="pregunta4" type="radio" name="preg2" onclick="puntosQuiz()"><span>Comprobar que el código funciona correctamente <br>
+				<input id="pregunta5" type="radio" name="preg2" onclick="puntosQuiz()"><span>Darle valores a los parámetros de dichas funciones <br>
+				<input id="pregunta6" type="radio" name="preg2" onclick="puntosQuiz()"><span>No tiene ningún fin <br>
+
+		<h4 id="quiz3">¿Qué significa DOM?</h4>
+
+				<input id="pregunta7" type="radio" name="preg3" onclick="puntosQuiz()"><span>Dual Object Model <br>
+				<input id="pregunta8" type="radio" name="preg3" onclick="puntosQuiz()"><span>Document Object Model <br>
+				<input id="pregunta9" type="radio" name="preg3" onclick="puntosQuiz()"><span>Document Obsolet Model <br>
+
+		<div>
+		<br>
+		<br>
+			<input id="botonEnviar" type="submit" value="ENVIAR" onclick="enviar()">
+		</div>
+
+		</form> <!-- Preguntas-->
+
+		</div> <!-- Quizz -->
+
+	</div> <!-- Contenedor -->
+
+</body>
+</html>
